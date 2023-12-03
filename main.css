@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background: black;
+    color: whitesmoke;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('header-image.png');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.eng_bttn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.eng_bttn img{
+    width: 10PX;
+    margin-left: 10px;
+}
+
+.head{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.head h1{
+    font-size: 3rem;
+    line-height: 70px;
+    font-weight: 900;
+    max-width: 1650px;
+}
+
+.head h3{
+    font-weight: 400;
+    margin: 1rem 0 0;;
+    font-size: 1.3rem;
+}
+
+.head p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 2rem;
+}
+
+.frm{
+    background: rgba(0, 0, 0, 0.549);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;   
+    overflow: hidden; 
+    border: 1px solid white;
+    width:40%;
+    margin-left: 30%;
+}
+
+.frm input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    background: transparent;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.963);
+    line-height:53px;   
+
+}
+
+
+.frm button{
+    background: #db0001;
+    border:0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px; 
+}
+
+hr{
+    background-color: rgb(48, 48, 48);
+    height: 8px;
+    border: 0;
+}
+
+.feature{
+    padding: 50px  12% ;
+    font-size:  22px;
+    height: 70vh;
+}
+.feature .row{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+ }
+
+ .textc{
+    flex-basis:50%;
+    margin-bottom: 20px;
+ }
+
+ .imgc{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+
+ .imgc img{
+    display: block;
+    width: 90%;
+    margin: auto;
+ }
+
+ .feature h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    display: block;
+ }
+
+ .faq{
+    padding: 20px 10%;
+    text-align: center;
+    
+ }
+
+ .faq h2{
+    font-size: 3rem;
+    font-weight: 900;
+ }
+
+ 
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(49, 49, 49);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;    
+    color: white;
+    
+}
+.accordion li label:hover{
+    background: rgb(67, 67, 67);
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: rgb(49, 49, 49);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+   
+    
+}
+
+
+.accordion input[type="radio"]:checked + label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .frm{
+    max-width: 600px;
+    margin: 20px auto;
+   
+}
+
+.faq small{
+    font-size: 13px;
+   
+}
+
+/* footer */
+.footer {
+    max-width: 90%;
+    margin: 2rem auto;
+    overflow: auto;
+    margin-top: 90px;
+  }
+  .footer,  .footer a {
+    color: #999;
+    font-size: 0.9rem;
+  }
+  .footer p {
+    margin-bottom: 1.5rem;
+  }
+  .footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  .footer li {
+    line-height: 1.9;
+  }
+  .footer .lang-select {
+    margin-top: 2rem;
+    color: #999;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+  }
